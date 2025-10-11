@@ -1,5 +1,7 @@
-# Spooky's website
+# 👋 Hi, I'm Himanshu
 
-A piece of my mind :)
+🎯 Kubestronaut
+☁️ Passionate about cloud-native infrastructure and Golang 
+📚 You will probably find me reading books
 
-This site is built on AstroJS and built using [satnaing/astro-paper](https://github.com/satnaing/astro-paper). 
+Checkout my website at https://blog.spookyintheam.com

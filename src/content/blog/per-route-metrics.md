@@ -1,5 +1,5 @@
 ---
-author: spooky
+author: Himanshu
 pubDatetime: 2025-09-08T13:17:08Z
 title: Per-route metrics using Istio
 featured: true
@@ -7,7 +7,7 @@ draft: false
 tags:
   - service-mesh
   - istio
-canonicalURL: https://blog.spookyintheam.com/posts/per-route-metrics-using-istio
+canonicalURL: https://me.spookyintheam.com/posts/per-route-metrics-using-istio
 description: How to setup per-route metrics using Istio service mesh
 ---
 

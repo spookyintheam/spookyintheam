@@ -6,4 +6,4 @@
 
 📚 You will probably find me reading books
 
-Checkout my website at https://blog.spookyintheam.com
+Checkout my website at https://me.spookyintheam.com

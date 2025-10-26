@@ -1,5 +1,5 @@
 ---
-author: spooky
+author: Himanshu
 pubDatetime: 2024-05-04T11:30:08Z
 title: K6 operator on Kubernetes
 featured: true
@@ -8,7 +8,7 @@ tags:
   - how-to
   - load-testing
   - k6
-canonicalURL: https://spookyintheam.com/posts/k6-operator-on-kubernetes/
+canonicalURL: https://me.spookyintheam.com/posts/k6-operator-on-kubernetes/
 description: How to use setup and use K6 operator on Kubernetes
 ---
 

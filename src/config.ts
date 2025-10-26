@@ -1,10 +1,10 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://blog.spookyintheam.com/", // replace this with your deployed domain
-  author: "Spooky",
-  desc: "Spooky's blog, a small insight into my mind",
-  title: "Spooky",
+  website: "https://me.spookyintheam.com/", // replace this with your deployed domain
+  author: "Himanshu",
+  desc: "Himanshu's blog, a small insight into my mind",
+  title: "Himanshu",
   ogImage: "og-media.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
@@ -26,7 +26,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/ghostx31",
+    href: "https://github.com/spookyintheam",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },

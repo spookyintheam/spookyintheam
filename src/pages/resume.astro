@@ -1,0 +1,139 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import { SITE } from "@config";
+import resumePDF from "../assets/resume.pdf";
+
+const title = "Resume";
+---
+
+<Layout title={`${title} | ${SITE.title}`}>
+  <Header activeNav="resume" />
+  <Breadcrumbs />
+  <main id="main-content">
+    <section class="mx-auto max-w-3xl px-4 pb-12 pt-6">
+      <h1 class="text-2xl font-semibold sm:text-3xl mb-8">Resume</h1>
+      
+      <!-- Download Button -->
+      <div class="mb-8">
+        <a 
+          href={resumePDF}
+          download="resume.pdf"
+          class="inline-flex items-center gap-2 rounded-lg bg-skin-accent px-4 py-2 text-skin-inverted hover:opacity-90 transition-opacity"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Download Resume PDF
+        </a>
+      </div>
+
+      <!-- Summary Section -->
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold mb-4 text-skin-accent">Summary</h2>
+        <div class="text-skin-base leading-relaxed space-y-4">
+          <p>
+            I am a <b>Kubestronaut and AWS certified DevOps Engineer</b> with experience building and managing production infrastructure across AWS and GCP.
+          </p>
+          <p>
+            You can find a gist of what I've done till now and download my resume as well from the link above!
+          </p>
+          <p>
+            You can also checkout my Kubestronaut status from <a
+              href="https://www.cncf.io/training/kubestronaut/?_sft_lf-country=in&p=himanshu-gaikwad"
+              class="text-skin-accent hover:text-skin-accent-hover underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              cncf.io/training/kubestronaut
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold mb-4 text-skin-accent">Experience</h2>
+        
+        <div class="space-y-6">
+          <!-- Job 1 -->
+          <div class="border-l-2 border-skin-line pl-4">
+            <h3 class="text-lg font-semibold text-skin-base">SDE - DevOps</h3>
+            <p class="text-sm text-skin-base opacity-80 mb-2">
+              IDfy • Mumbai, India • Nov 2023
+            </p>
+            <ul class="list-disc list-inside space-y-1 text-skin-base">
+              <li>Reduced load balancer costs by 70% across org using Gateway API.</li>
+              <li>Achieved 95%+ score in CIS benchmarking across 4 different AWS environments.</li>
+              <li>Designed and implemented autoscaling GitLab CI infrastructure managing 300+ daily pipeline executions across
+hybrid VM/Kubernetes environments, reducing operations costs by 25% while improving build reliability.</li>
+            </ul>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="border-l-2 border-skin-line pl-4">
+            <h3 class="text-lg font-semibold text-skin-base">DevOps Engineer Intern</h3>
+            <p class="text-sm text-skin-base opacity-80 mb-2">
+              CityMall • Gurugram, India • Jul 2023 - Oct 2023
+            </p>
+            <ul class="list-disc list-inside space-y-1 text-skin-base">
+              <li>Migrated primary Elasticache to self-managed Redis cluster on Kubernetes reducing Redis costs by 50%.</li>
+              <li>Streamlined the Continuous Deployment process by introducing GitOps and integrating ArgoCD with Jenkins reducing build times by over
+10 minutes on average.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Certifications Section (Optional) -->
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold mb-4 text-skin-accent">Certifications</h2>
+        
+        <ul class="space-y-2 text-skin-base">
+          <li>• <b>Kubestronaut</b> - The Linux Foundation</li>
+          <li>• <b>AWS Solutions Architect Associate</b> - AWS</li>
+          <li>• <b>AWS Solutions Architect Associate</b> - AWS</li>
+        </ul>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold mb-4 text-skin-accent">Skills</h2>
+        
+        <div class="space-y-4">
+          <div>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-block bg-skin-card px-3 py-1 rounded-full text-sm border border-skin-line">Kubernetes</span>
+              <span class="inline-block bg-skin-card px-3 py-1 rounded-full text-sm border border-skin-line">AWS/GCP</span>
+              <span class="inline-block bg-skin-card px-3 py-1 rounded-full text-sm border border-skin-line">IaC (Terraform)</span>
+              <span class="inline-block bg-skin-card px-3 py-1 rounded-full text-sm border border-skin-line">Monitoring and Logging (Prometheus-Grafana stack and EFK)</span>
+              <span class="inline-block bg-skin-card px-3 py-1 rounded-full text-sm border border-skin-line">GitOps (ArgoCD)</span>
+              <span class="inline-block bg-skin-card px-3 py-1 rounded-full text-sm border border-skin-line">CI/CD (Gitlab and GitHub)</span>
+              <span class="inline-block bg-skin-card px-3 py-1 rounded-full text-sm border border-skin-line">Go, Bash and Python</span>
+              <!-- Add more skills as needed -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="mb-10">
+        <h2 class="text-xl font-semibold mb-4 text-skin-accent">Education</h2>
+        
+        <div class="space-y-4">
+          <div class="border-l-2 border-skin-line pl-4">
+            <h3 class="text-lg font-semibold text-skin-base">B.Tech in CSE</h3>
+            <p class="text-sm text-skin-base opacity-80">
+              SRM University • Delhi-NCR • 2019-2023
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+  </main>
+  <Footer />
+</Layout>

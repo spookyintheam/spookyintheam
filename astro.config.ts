@@ -16,6 +16,12 @@ export default defineConfig({
     react(),
     sitemap(),
   ],
+  vite: {
+    assetsInclude: ['**/*.pdf'],
+    optimizeDeps: {
+      exclude: ["@resvg/resvg-js"],
+    },
+  },
   markdown: {
     remarkPlugins: [
       remarkToc,
@@ -32,11 +38,6 @@ export default defineConfig({
         light: "catppuccin-macchiato",
       },
       wrap: true,
-    },
-  },
-  vite: {
-    optimizeDeps: {
-      exclude: ["@resvg/resvg-js"],
     },
   },
   scopedStyleStrategy: "where",

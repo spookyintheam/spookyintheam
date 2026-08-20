@@ -56,33 +56,45 @@ const title = "Resume";
       <!-- Experience Section -->
       <section class="mb-10">
         <h2 class="text-xl font-semibold mb-4 text-skin-accent">Experience</h2>
-        
+
         <div class="space-y-6">
           <!-- Job 1 -->
           <div class="border-l-2 border-skin-line pl-4">
-            <h3 class="text-lg font-semibold text-skin-base">SDE - DevOps</h3>
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-lg font-semibold text-skin-base">DevOps Engineer</h3>
+              <p class="text-sm text-skin-base opacity-80">Jan 2026 - Present</p>
+            </div>
             <p class="text-sm text-skin-base opacity-80 mb-2">
-              IDfy • Mumbai, India • Nov 2023
+              100ms (100ms.live and 100ms.ai) • Bengaluru, India
             </p>
             <ul class="list-disc list-inside space-y-1 text-skin-base">
-              <li>Experience managing 40+ production Kubernetes clusters across AWS and GCP.</li>
-              <li>Reduced load balancer costs by 70% across org using Gateway API.</li>
-              <li>Achieved 95%+ score in CIS benchmarking across 4 different AWS environments.</li>
-              <li>Designed and implemented autoscaling GitLab CI infrastructure managing 300+ daily pipeline executions across
-hybrid VM/Kubernetes environments, reducing operations costs by 25% while improving build reliability.</li>
+              <li>Own infrastructure for two production SaaS platforms - a global video/audio product and a HIPAA-regulated AI voice-agent platform in US healthcare — as one of two engineers on the team.</li>
+              <li>Re-platformed CD from FluxCD to standardized ArgoCD GitOps with Kyverno-gated production approvals, cutting average deployment time from 30+ min to 10 min while enforcing consistent HA, autoscaling, and PDB configs.</li>
+              <li>Delivered a HIPAA-compliant air-gapped AWS landing zone for an enterprise client via Terraform with self-hosted LLM pipeline using Temporal, Langfuse, Deepgram, SonarQube and ClickHouse automating referrals workflow for a major US pharmaceutical distributor using AI agents.</li>
+              <li>Migrated org-wide CI from GitHub-hosted to self-hosted ARC runners on spot nodes, segmented by build vs. light-CI workloads, cutting CI/CD costs from $3,000 to $700/month.</li>
+              <li>Consolidated observability with LGTM stack to VictoriaMetrics, cutting query latency to under 5 seconds on large-scale queries and reducing infra costs 20% by replacing a large Prometheus installation with lightweight VMAgents.</li>
+              <li>Built a CronJob and initContainer-based system to auto-attach reserved static IPs to GKE nodes serving SIP/TURN traffic, eliminating a recurring manual failure point on node churn and provide IP-whitelisting for SIP services for clients.</li>
+              <li>Led remediation and evidence collection for SOC 2 and HIPAA certification of a newly formed AI org, hardening infrastructure and CI/CD controls to help the org achieve the certifications.</li>
             </ul>
           </div>
 
           <!-- Job 2 -->
           <div class="border-l-2 border-skin-line pl-4">
-            <h3 class="text-lg font-semibold text-skin-base">DevOps Engineer Intern</h3>
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-lg font-semibold text-skin-base">SDE - DevOps</h3>
+              <p class="text-sm text-skin-base opacity-80">Nov 2023 - Jan 2026</p>
+            </div>
             <p class="text-sm text-skin-base opacity-80 mb-2">
-              CityMall • Gurugram, India • Jul 2023 - Oct 2023
+              IDfy • Mumbai, India
             </p>
             <ul class="list-disc list-inside space-y-1 text-skin-base">
-              <li>Migrated primary Elasticache to self-managed Redis cluster on Kubernetes reducing Redis costs by 50%.</li>
-              <li>Streamlined the Continuous Deployment process by introducing GitOps and integrating ArgoCD with Jenkins reducing build times by over
-10 minutes on average.</li>
+              <li>Lead team of 4 engineers in architecting and migrating 90+ microservices to Kubernetes Gateway API across 40+ production clusters, reducing load balancer costs by 70%. Mentored team on zero-downtime deployments using Argo Rollouts through hands-on code reviews and sprint planning.</li>
+              <li>Designed and implemented autoscaling GitLab CI infrastructure managing 100+ daily pipeline executions across hybrid VM/Kubernetes environments, reducing operations costs by 25% while improving build reliability.</li>
+              <li>Developed an AI agent platform using Google’s ADK with modular MCP integration capabilities, enabling plug-and-play functionality for multiple protocols deployed via Google Vertex AI Engine.</li>
+              <li>Achieved 95%+ CIS benchmark compliance across 4 AWS single-tenant environments, implementing automated security controls, configuration management, and compliance monitoring to meet enterprise cybersecurity requirements.</li>
+              <li>Deployed the flagship vKYC product from scratch on a single-tenant AWS setup within one week for a major bank, including landing-zone setup and migration of all Alpine-based Docker images to Red Hat UBI 8.</li>
+              <li>Deployed Wazuh SIEM in a multi-tenant cloud setup to monitor and secure public-facing compute endpoints.</li>
+              <li>Developed an in-house semantic versioning tool in Go to automate application release management across teams.</li>
             </ul>
           </div>
         </div>
